@@ -63,7 +63,7 @@ WSL has its own file system that's not natively accessible from Windows, but Win
 For example, say you want to store pokeemerald Expansion in **C:\Users\\_\<user>_\Desktop\decomps**. First, ensure that the folder already exists. Then, enter this command to **change directory** to said folder, where *\<user>* is your **Windows** username:
 
 ```bash
-cd /mnt/c/Users/<user>/Desktop/decomps
+cd
 ```
 
 <details>

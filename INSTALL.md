@@ -56,7 +56,7 @@ Follow these steps to build `pokeemerald-expansion`.
 3. Navigate to the newly downloaded project.
 
     ```console
-    cd pokeemerald-expansion
+cd 
     ```
 4. Build the project.
 

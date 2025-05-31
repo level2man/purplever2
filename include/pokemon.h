@@ -124,15 +124,14 @@ struct PokemonSubstruct0
     u16 species:11; // 2047 species.
     u16 teraType:5; // 30 types.
     u16 heldItem:10; // 1023 items.
-    u16 unused_02:6;
+    u16 pokeball:6; // 63 balls.
     u32 experience:21;
     u32 nickname11:8; // 11th character of nickname.
     u32 unused_04:3;
     u8 ppBonuses;
     u8 friendship;
-    u16 pokeball:6; // 63 balls.
-    u16 nickname12:8; // 12th character of nickname.
-    u16 unused_0A:2;
+    u8 nickname12;
+    u8 nickname13;
 };
 
 struct PokemonSubstruct1
@@ -378,9 +377,11 @@ struct SpeciesInfo /*0xC4*/
     u8 eggGroups[2];
     u16 abilities[NUM_ABILITY_SLOTS]; // 3 abilities, no longer u8 because we have over 255 abilities now.
     u8 safariZoneFleeRate;
+    u8 cost;
+    u8 touhou;
 
     // Pokédex data
-    u8 categoryName[13];
+    u8 categoryName[16];
     u8 speciesName[POKEMON_NAME_LENGTH + 1];
     u16 cryId;
     u16 natDexNum;
